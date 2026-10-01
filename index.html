@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
 <title>Sintolvox — la bottega dell'elettronica di Milano, dal 1954</title>
 <meta name="description" content="Sintolvox: la bottega storica dell'elettronica di zona De Angeli, dal 1954. Radio, TV, hi-fi, giradischi, componenti anche datati, riparazioni — e oggi monopattini elettrici. Via Privata Asti 12, Milano.">
 <link rel="canonical" href="https://rotenzark.github.io/sintolvox/">
@@ -15,9 +16,7 @@
 <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Figtree:ital,wght@0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 <link rel="stylesheet" href="css/styles.css?v=1">
 <script type="application/ld+json">
 {
@@ -36,11 +35,34 @@
     "postalCode": "20149",
     "addressCountry": "IT"
   },
-  "geo": { "@type": "GeoCoordinates", "latitude": 45.4665127, "longitude": 9.1532896 },
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.2", "reviewCount": "73" },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.4665127,
+    "longitude": 9.1532896
+  },
   "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "09:00", "closes": "12:30" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "14:30", "closes": "19:00" }
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "opens": "09:00",
+      "closes": "12:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "opens": "14:30",
+      "closes": "19:00"
+    }
   ]
 }
 </script>
@@ -262,7 +284,7 @@
       </div>
     </div>
     <div class="dove__map reveal">
-      <iframe title="Mappa di Sintolvox, Via Privata Asti 12 Milano" src="https://www.google.com/maps?q=Sintolvox+Via+Privata+Asti+12+Milano&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="mappa-clic" data-mappa-clic style="--mappa-h: 450px"><template><iframe title="Mappa di Sintolvox, Via Privata Asti 12 Milano" src="https://www.google.com/maps?q=Sintolvox+Via+Privata+Asti+12+Milano&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps/place/Sintolvox+s.r.l./@45.4665127,9.1532896,17z" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div>
     </div>
   </div>
 </section>
@@ -290,6 +312,7 @@
     <p class="foot__dove" data-i18n="foot.dove">Via Privata Asti 12, 20149 Milano · <a href="tel:+3902462237">02 462237</a></p>
     <p class="foot__demo" data-i18n="foot.demo">Sito dimostrativo (concept) realizzato da Bespoke Studio a partire da dati e foto pubblici — non è il sito ufficiale dell'attività.</p>
   </div>
+  <p class="privacy-link"><a href="privacy.html">Privacy</a></p>
 </footer>
 
 <!-- action-bar mobile -->
@@ -308,5 +331,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="js/main.js?v=3"></script>
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>
